@@ -1,0 +1,191 @@
+/*=========================
+  FONDO
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#4f46e5,#9333ea,#ec4899,#f59e0b);
+    background-size:400% 400%;
+    animation:fondo 12s ease infinite;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:30px;
+}
+
+@keyframes fondo{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/*=========================
+  FORMULARIO
+=========================*/
+
+form{
+
+    width:650px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+
+}
+
+/*=========================
+ TITULO
+=========================*/
+
+h2{
+
+    text-align:center;
+
+    color:white;
+
+    position:absolute;
+
+    top:20px;
+
+    width:100%;
+
+    font-size:34px;
+
+    text-shadow:2px 2px 8px black;
+
+}
+
+/*=========================
+LABELS
+=========================*/
+
+label{
+
+    display:block;
+
+    color:#4f46e5;
+
+    font-weight:bold;
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+}
+
+/*=========================
+INPUTS
+=========================*/
+
+input,
+select{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:2px solid #d1d5db;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+input:focus,
+select:focus{
+
+    border-color:#9333ea;
+
+    box-shadow:0 0 15px rgba(147,51,234,.4);
+
+    outline:none;
+
+}
+
+/*=========================
+FOLIO
+=========================*/
+
+#folio{
+
+    background:#eef2ff;
+
+    color:#4f46e5;
+
+    font-weight:bold;
+
+    text-align:center;
+
+}
+
+/*=========================
+BOTONES
+=========================*/
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:15px;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+/* Botón Folio */
+
+button:first-of-type{
+
+    background:linear-gradient(90deg,#2563eb,#06b6d4);
+
+}
+
+/* Botón XML */
+
+button:last-of-type{
+
+    background:linear-gradient(90deg,#16a34a,#84cc16);
+
+}
+
+button:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}

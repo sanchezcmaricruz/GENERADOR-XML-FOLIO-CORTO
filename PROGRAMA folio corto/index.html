@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Generador de Certificados SAT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Generador XML SAT</h2>
+
+<form id="frm">
+
+    RFC Contribuyente
+
+    <input
+        type="text"
+        id="rfcContribuyente">
+
+    <br><br>
+
+    RFC Representante Legal
+
+    <input
+        type="text"
+        id="rfcRepresentanteLegal">
+
+    <br><br>
+
+    RFC Proveedor
+
+    <input
+        type="text"
+        id="rfcProveedor">
+
+    <br><br>
+
+    RFC Representante del Proveedor
+
+    <input
+        type="text"
+        id="rfcRepresentanteLegalProveedor">
+
+    <br><br>
+
+    Fecha
+
+    <input
+        type="date"
+        id="fecha">
+
+    <br><br>
+
+Folio generado:
+
+<input type="text" id="folio" readonly>
+
+<button type="button" onclick="generarFolioManual()">
+    Generar folio
+</button>
+<br><br>
+
+
+Producto
+<br>
+
+<select id="Producto">
+    <option value="">Seleccione un producto</option>
+    <option value="PR03">PR03</option>
+    <option value="PR07">PR07</option>
+    <option value="PR08">PR08</option>
+    <option value="PR09">PR09</option>
+    <option value="PR10">PR10</option>
+    <option value="PR11">PR11</option>
+    <option value="PR12">PR12</option>
+    <option value="PR13">PR13</option>
+    <option value="PR14">PR14</option>
+    <option value="PR15">PR15</option>
+    <option value="PR16">PR16</option>
+    <option value="PR17">PR17</option>
+    <option value="PR18">PR18</option>
+    <option value="PR19">PR19</option>
+</select>
+
+<br><br>
+RFC Personal
+<br>
+
+<input
+    type="text"
+    id="rfcPersonal">
+
+<br><br>
+    <button type="button"
+            onclick="generarXML()">
+
+        Generar XML
+
+    </button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
